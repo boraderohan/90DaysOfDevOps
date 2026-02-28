@@ -1,4 +1,4 @@
-![checking status](https://github.com/user-attachments/assets/e614f50e-df4d-4032-8da9-d7805f25aa20)## Task 1: Install and Configure Git
+## Task 1: Install and Configure Git
 
 Verify Git is installed on your machine
 
