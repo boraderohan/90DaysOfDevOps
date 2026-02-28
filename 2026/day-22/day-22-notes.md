@@ -41,10 +41,103 @@ ls
 
 Create a file called git-commands.md inside the repo
 
+touch git_command.md
+
 Add the Git commands you've used so far, organized by category:
-Setup & Config
-Basic Workflow
-Viewing Changes
-For each command, write:
-What it does (1 line)
-An example of how to use it
+
+vim git_command.md
+
+### For each command, write:
+### What it does (1 line)
+### An example of how to use it
+
+## Setup & Config
+
+<< 'define'
+
+You can query/set/replace/unset options with this command. The name is actually the section and the key separated
+by a dot, and the value will be escaped.
+
+define
+
+git config --global user.name "username"
+
+git config --global user.email"example123@gmail.com"
+
+## Basic Workflow
+
+git init # git-init - Create an empty Git repository or reinitialize an existing one
+
+git add  # Add file contents to the index
+
+git commit -m # Record changes to the repository
+
+## Viewing Changes
+
+git log #  Show commit logs
+
+git status # Show the working tree status
+
+## More basic commands
+
+git checkout -b <branchname> # Switch branches or restore working tree files
+
+git switch <new-branch> # Switch branches
+
+## Push & Pull commands
+
+git push origin main # Update remote refs along with associated objects
+
+git pull origin main # Fetch from and integrate with another repository or a local branch
+
+## Changing the default url of git
+
+git remote -v # Manage set of tracked repositories
+
+git remote set-url origin
+<< 'define'
+
+Change URLs for the remote. Sets first URL for remote <name> that matches regex <oldurl> (first URL if no <oldurl> is given) to <newurl>. If <oldurl> doesn’t match any URL, an error occurs and nothing is changed.
+
+
+## Task 4: Stage and Commit
+Stage your file
+
+git add git_command.md # Add file contents to the index
+
+Check what's staged
+
+git status
+
+Commit with a meaningful message
+
+git commit -m "Added basic git commands"
+
+View your commit history
+
+git log --oneline
+
+## Task 5: Make More Changes and Build History
+
+Add more commands to git-commands.md, e.g., git add, git commit, git checkout.
+Repeat add → commit 3 times:
+
+git checkout -b git_advance_command.md
+
+git switch master
+
+vim git_command.md 
+
+git add git_command.md
+
+git commit -m "Added more basic commands."
+
+
+git log --oneline
+![oneline ](https://github.com/user-attachments/assets/f5e96474-5b3c-492d-8fd1-45558e94d477)
+
+
+
+
+
+
