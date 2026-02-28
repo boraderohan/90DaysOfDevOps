@@ -1,8 +1,11 @@
-## Task 1: Install and Configure Git
+![checking status](https://github.com/user-attachments/assets/e614f50e-df4d-4032-8da9-d7805f25aa20)## Task 1: Install and Configure Git
 
 Verify Git is installed on your machine
 
 git --version
+
+![git version](https://github.com/user-attachments/assets/4fe01238-c08e-4279-9f3e-10920daf0cda)
+
 
 Set up your Git identity — name and email
 
@@ -13,6 +16,8 @@ git config --global user.email "rohanborade18@gmail.com"
 Verify your configuration
 
 git config --list
+
+![global user setup](https://github.com/user-attachments/assets/96ce420e-c008-4dc7-acce-b2af7f0d7ae9)
 
 
 ## Task 2: Create Your Git Project
@@ -25,11 +30,18 @@ Initialize it as a Git repository
 
 git init
 
+![git init](https://github.com/user-attachments/assets/2b95fa21-5cd4-4c65-a977-40fc3bc671fc)
+
+
+
 Check the status — read and understand what Git is telling you
 
 git status
 
-Explore the hidden .git/ directory — look at what's inside
+![checking status](https://github.com/user-attachments/assets/33a57492-d0a8-4a23-8e1a-f32c65ef354f)
+
+
+he hidden .git/ directory — look at what's inside
 
 ls -a
 
