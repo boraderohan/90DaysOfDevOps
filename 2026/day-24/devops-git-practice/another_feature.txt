@@ -1,3 +1,5 @@
 
 Adds new basic features to this branch 
 
+Mid range good features are added in this branch 
+
