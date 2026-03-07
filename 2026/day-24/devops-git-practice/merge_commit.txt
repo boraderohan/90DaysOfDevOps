@@ -10,3 +10,5 @@ what is the tradeoff of squashing
 
 Added variable name for clarity
 
+
+do edit in this to check the stash list, and how it working.
