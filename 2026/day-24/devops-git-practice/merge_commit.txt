@@ -1,0 +1,12 @@
+# Task 3
+
+In this task we are going to learn squash and merge commit 
+
+one more thing we are going to learn in when to squash merge
+
+What is the differenc between squash and merge commit?, also covered in this task 
+
+what is the tradeoff of squashing
+
+Added variable name for clarity
+

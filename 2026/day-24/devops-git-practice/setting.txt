@@ -1,0 +1,4 @@
+# Task 3 Adding few commits to this file 
+
+
+This file is create for the setting which are required by the project.
