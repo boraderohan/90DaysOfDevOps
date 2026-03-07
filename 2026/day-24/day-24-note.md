@@ -120,6 +120,9 @@ Cleaning up before committing
 
 You have debug code or temporary changes mixed with real work
 
+# Task 5
+
+
 13)What does cherry-pick do?
 
 Ans: Cherry-pick allows you to apply a specific commit from one branch to another without merging the entire branch. 
