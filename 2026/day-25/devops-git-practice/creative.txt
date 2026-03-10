@@ -4,4 +4,6 @@ This file is created to use in the assignment for cherry picking task.
 
 This feature branch consist of all the lastest and dynamic features of the project.
 
+# Day 25 (Task 1)
 
+How to recommit if you just used command git reset --soft HEAD~1 it is staged to removed from commit respositoryo 
