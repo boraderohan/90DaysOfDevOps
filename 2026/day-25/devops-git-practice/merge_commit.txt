@@ -12,3 +12,9 @@ Added variable name for clarity
 
 
 do edit in this to check the stash list, and how it working.
+
+
+# Day 25 (Task 1)
+
+modifiy this file to you the reset command and learn the when to use and how to use
+
