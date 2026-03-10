@@ -47,5 +47,20 @@ Pushing after a reset can cause merge conflicts, lost work, or force others to g
 only if: You’re the only one working on the branch.
 
 
+# Task 2
 
+5)How is git revert different from git reset?
+
+Ans: git reset moves the branch pointer backward to a previous commit, effectively "undoing" commits as if they never happened. 
+git revert creates a new commit that undoes the changes from a previous commit, leaving the commit history intact.
+
+6)Why is revert considered safer than reset for shared branches?
+
+Ans: With reset, you're rewriting history — if others have already pulled those commits, their branches will diverge and cause conflicts.
+With revert, you're adding a new commit that undoes changes, so the history remains linear and others can pull cleanlywithout conflicts.
+
+7)When would you use revert vs reset?
+
+Ans: Use reset on local/unpublished commits when you want to clean up your history before pushing.
+Use revert on shared/published commits to safely undo changes without disrupting collaborators' work.
 
