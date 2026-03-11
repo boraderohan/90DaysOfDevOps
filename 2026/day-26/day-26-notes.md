@@ -54,4 +54,22 @@ gh pr review 5 --approve
 gh pr review 5 --request-changes
 gh pr review 5 --comment "Fix this line" --path README.md --line 10
 
+# Task 5 
 
+How could gh run and workflow be useful in CI/CD piplines?
+
+Ans: gh run & gh workflow in CI/CD pipelines — key uses:
+
+Monitor runs: gh run list track status of recent workflow runs.
+View details: gh run view RUN-ID inspect logs, jobs, and outcomes.
+Trigger workflows: gh workflow run workflow.yml manually start workflows (e.g., deploy, test).
+List workflows: gh workflow list see all available workflows in repo.
+Rerun failed jobs: gh run rerun RUN-ID retry without pushing new code.
+Script automation: Combine with --json, --silent, and jq to parse and react to run status in scripts or CI steps.
+
+Useful for:
+
+Auto-retrying failed builds
+Triggering deploys on demand
+Reporting build status in Slack/CI scripts
+Auditing workflow history programmatically
