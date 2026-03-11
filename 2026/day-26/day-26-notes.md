@@ -36,3 +36,22 @@ Release workflows that close resolved issues
 You can pipe commands together or loop through issue lists to perform batch operations. 
 The --json flag also lets you parse structured output for complex automation.
 
+## Task 4
+
+3) What merge methods does gh pr merge support?
+
+Ans: gh pr merge supports three merge methods:
+
+merge: Creates a merge commit (default)
+squash: Combines all commits into one, then merges
+rebase: Applies commits linearly onto target branch
+
+4)How would you review someones else's PR using gh?
+
+Ans: gh pr checkout 5
+gh pr review 5 --comment "Looks good!" --repo owner/repo-name
+gh pr review 5 --approve
+gh pr review 5 --request-changes
+gh pr review 5 --comment "Fix this line" --path README.md --line 10
+
+
