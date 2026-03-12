@@ -22,5 +22,23 @@ Ans: Yes, they do have description but they are short and crips.
 
 Ans: yes, I am currently pursuing a DevOps engineering program to upskill.
 
+### Task 6: Before & After
+
+/c/Users/rohan/Downloads/github-profile.jpeg
+
+/c/Users/rohan/Downloads/github-pinned-repo.jpeg
+
+
+https://github.com/boraderohan
+
+Write Three things you improved and why
+
+Ans: - Firstly i have uploaded profile picture to github account.
+
+- Secondly i have created a boraderohan special repository same as my username to add readme.md which enhances the overview of my account.
+
+- Lastly i pinned six repository which will tell recruiter what im working on.
+
+
 
 
