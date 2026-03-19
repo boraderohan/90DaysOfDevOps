@@ -50,28 +50,159 @@ Go through the checklist below. For each item, mark yourself honestly:
 - [✔️] Check network connectivity — ping, curl, netstat, ss, dig, nslookup
 - [✔️] Explain DNS resolution, IP addressing, subnets, and common ports
 
-#### Shell Scripting
-- [ ] Write a script with variables, arguments, and user input
-- [ ] Use if/elif/else and case statements
+Ans: DNS Resolution
+Translates human-readable domain names (like google.com) to IP addresses (like 142.250.187.174) using a hierarchical system of DNS servers. When you visit a website, your device queries DNS servers to find the corresponding IP address.
+
+IP Addressing
+Unique identifiers for devices on a network. IPv4 uses 32-bit addresses (e.g., 192.168.1.1), while IPv6 uses 128-bit addresses (e.g., 2001:0db8:85a3::8a2e:0370:7334). Each device needs a unique IP to communicate.
+
+Subnets
+Divide larger networks into smaller, manageable segments using subnet masks (e.g., 255.255.255.0). This improves performance, security, and organization. For example, 192.168.1.0/24 represents a subnet with 256 possible addresses.
+
+port 80 : HTTP 
+
+port 443: HTTPS
+
+port 22: SSH
+
+port 53: DNS 
+
+port 25: SMTP
+
+
+- [✔️] Write a script with variables, arguments, and user input
+- [✔️] Use if/elif/else and case statements
 - [ ] Write for, while, and until loops
 - [ ] Define and call functions with arguments and return values
 - [ ] Use grep, awk, sed, sort, uniq for text processing
 - [ ] Handle errors with set -e, set -u, set -o pipefail, trap
 - [ ] Schedule scripts with crontab
 
+- Need to revisit this Shell Scriting 
+
 #### Git & GitHub
-- [ ] Initialize a repo, stage, commit, and view history
-- [ ] Create and switch branches
-- [ ] Push to and pull from GitHub
-- [ ] Explain clone vs fork
-- [ ] Merge branches — understand fast-forward vs merge commit
-- [ ] Rebase a branch and explain when to use it vs merge
-- [ ] Use git stash and git stash pop
-- [ ] Cherry-pick a commit from another branch
-- [ ] Explain squash merge vs regular merge
-- [ ] Use git reset (soft, mixed, hard) and git revert
-- [ ] Explain GitFlow, GitHub Flow, and Trunk-Based Development
-- [ ] Use GitHub CLI to create repos, PRs, and issues
+- [✔️] Initialize a repo, stage, commit, and view history
+- [✔️] Create and switch branches
+- [✔️] Push to and pull from GitHub
+- [✔️] Explain clone vs fork
+- [✔️] Merge branches — understand fast-forward vs merge commit
+- [✔️] Rebase a branch and explain when to use it vs merge
+- [✔️] Use git stash and git stash pop
+- [✔️] Cherry-pick a commit from another branch
+- [✔️] Explain squash merge vs regular merge
+- [✔️] Use git reset (soft, mixed, hard) and git revert
+- [✔️] Explain GitFlow, GitHub Flow, and Trunk-Based Development
+- [✔️] Use GitHub CLI to create repos, PRs, and issues
+
+Explain clone vs fork 
+
+Ans: 
+- Clone: You get local copy to work on, no remote ownership
+- Fork: you get your own remote copy to modify and purpose changes via pull request
+
+Explain Squash merger vs regular merge
+
+Ans: Regular Merge
+- Preserves all individual commits from your feature branch
+- Creates a merge commit that ties the branches together
+- Shows the full history of how the feature evolved
+- Good for collaborative work or when you want to track changes per commit
+
+- Squash Merge
+- Combines all commits from your feature branch into one single commit
+- No merge commit is created — it’s like cherry-picking one big change
+- Keeps history clean and minimal
+- Best for small features or fixes where individual commits aren’t meaningful
+
+Explain when to use rebase vs merge 
+
+Ans:When to Use Each
+
+- Use Rebase when:
+
+- Working on a feature branch that's only yours (not shared)
+- You want a clean, linear history before merging to main
+- Preparing a PR and want to catch up with main without merge commits
+- You're the only one working on that branch
+- Use Merge when:
+
+- use Merge When:
+
+- Working on a shared/team branch
+- You want to preserve the complete history of when branches diverged
+- Merging into main or a protected branch
+- Collaborating with others on the same bran
+
+Explain GitFlow, GitHub flow, and Trunk-based Developement
+
+Ans:
+
+- GitFlow
+
+- Branching Strategy:
+
+- main (production)
+- develop (integration)
+- Feature branches
+- Release branches 
+- Hotfix branches 
+
+- Process:
+
+- Start feature from develop
+- Merge to develop via pull request
+- Create release branch for testing
+- Merge release to main and develop
+- Hotfixes go to main and back to develop
+
+Best for: Long release cycles, teams with strict release processes.
+
+Pros: Clear separation of concerns, good for planning releases.
+
+Cons: Complex, can slow down development.
+
+- GitHub Flow 
+
+- Branching Strategy:
+
+- main 
+- Feature branches
+- Process:
+
+- Create branch from main
+- Work on feature
+- Open pull request
+- Merge to main after review
+
+- Deploy immediately
+
+- Best for: Continuous delivery, small teams.
+
+- Pros: Simple, fast, aligned with CI/CD.
+
+- Cons: Less control over release timing.
+
+
+
+- Trunk-Based Development (TBD)
+
+- Branching Strategy:
+
+- Single main branch 
+- Short-lived feature branches (often 1 day or less)
+
+- Process:
+
+- All work happens on main
+- Use feature flags to hide incomplete features
+- Merge small changes frequently
+- Deploy multiple times per day
+ 
+- Best for: High-velocity teams, DevOps, microservices.
+
+- Pros: Fast feedback, minimal merge conflicts.
+
+- Cons: Requires strong testing and CI/CD.
 
 ---
 
