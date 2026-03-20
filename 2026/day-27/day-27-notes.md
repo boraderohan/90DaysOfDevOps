@@ -24,16 +24,16 @@ Ans: yes, I am currently pursuing a DevOps engineering program to upskill.
 
 ### Task 6: Before & After
 
-/c/Users/rohan/Downloads/github-profile.jpeg
+![github-profile png](https://github.com/user-attachments/assets/92b1aac5-1c0e-44ad-9a48-0c8767cf1339)
 
-/c/Users/rohan/Downloads/github-pinned-repo.jpeg
-
+![github-pinned-repo png](https://github.com/user-attachments/assets/14567e80-9931-40ce-ab1e-f4fca68ecd1e)
 
 https://github.com/boraderohan
 
 Write Three things you improved and why
 
-Ans: - Firstly i have uploaded profile picture to github account.
+Ans: 
+- Firstly i have uploaded profile picture to github account.
 
 - Secondly i have created a boraderohan special repository same as my username to add readme.md which enhances the overview of my account.
 
