@@ -91,7 +91,7 @@ Ans: Docker architecture is built around a client-server model with components t
 
 Draw or describe the Docker architecture in your own words.
 
-Ans: ![Docker Architecture](https://github.com/user-attachments/assets/443c47c0-bed4-48ae-81c5-8fdd388b6164)
+Ans: ![Docker Architecture]()/c/Users/rohan/Downloads/Docker_Architecture.png
 ---
 
 ### Task 2: Install Docker
