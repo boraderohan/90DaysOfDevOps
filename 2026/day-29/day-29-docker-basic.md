@@ -64,7 +64,7 @@ Ans:The key difference is how they virtualize resources:
 
 Ans: Docker architecture is built around a client-server model with components that work together to build, ship, and run containers.
 
-### Docker client:
+### Docker client
 - The user interface to Docker.
 - You type commands like docker run or docker build.
 - communicates with the Docker Daemon.
@@ -91,7 +91,8 @@ Ans: Docker architecture is built around a client-server model with components t
 
 Draw or describe the Docker architecture in your own words.
 
-Ans: ![Docker Architecture]()/c/Users/rohan/Downloads/Docker_Architecture.png
+Ans: <img width="1922" height="2719" alt="Docker_Architecture" src="https://github.com/user-attachments/assets/c978d892-6b0c-43bb-ad25-1fee8a2d4058" />
+
 ---
 
 ### Task 2: Install Docker
@@ -100,6 +101,7 @@ Ans: ![Docker Architecture]()/c/Users/rohan/Downloads/Docker_Architecture.png
 3. Run the `hello-world` container
 4. Read the output carefully — it explains what just happened
 
+![docker--install](https://github.com/user-attachments/assets/47363aa0-5a2b-4357-bfa0-e4354e303bb6)
 
 ---
 
@@ -110,6 +112,12 @@ Ans: ![Docker Architecture]()/c/Users/rohan/Downloads/Docker_Architecture.png
 4. List all containers (including stopped ones)
 5. Stop and remove a container
 
+![docker-run-real-container](https://github.com/user-attachments/assets/5bdae638-3e41-4709-a584-48b700ffe457)
+
+![docker-listing](https://github.com/user-attachments/assets/194ab714-043d-4348-8df5-0e2a31a27824)
+
+![docker-stop-remove](https://github.com/user-attachments/assets/df297621-d4f4-4235-97dc-27fb553aa280)
+
 ---
 
 ### Task 4: Explore
@@ -118,6 +126,14 @@ Ans: ![Docker Architecture]()/c/Users/rohan/Downloads/Docker_Architecture.png
 3. Map a **port** from the container to your host
 4. Check **logs** of a running container
 5. Run a command **inside** a running container
+
+![docker-detached](https://github.com/user-attachments/assets/26d0dffd-2ea5-4027-9d0a-3e2006ef0874)
+
+![docker-logs](https://github.com/user-attachments/assets/1f722a36-2959-46cc-9f60-3e9340da97ca)
+
+![docker-listing-all-stopped](https://github.com/user-attachments/assets/ec7d102d-040c-4d3c-8868-47bb67330402)
+
+![docker-running-command-inside-container](https://github.com/user-attachments/assets/8df6446b-f3e3-461c-9e22-f1cfd78e221f)
 
 ---
 
