@@ -72,11 +72,11 @@ port 25: SMTP
 
 - [✔️] Write a script with variables, arguments, and user input
 - [✔️] Use if/elif/else and case statements
-- [ ] Write for, while, and until loops
-- [ ] Define and call functions with arguments and return values
-- [ ] Use grep, awk, sed, sort, uniq for text processing
-- [ ] Handle errors with set -e, set -u, set -o pipefail, trap
-- [ ] Schedule scripts with crontab
+- [✔️] Write for, while, and until loops
+- [✔️] Define and call functions with arguments and return values
+- [✔️] Use grep, awk, sed, sort, uniq for text processing
+- [✔️] Handle errors with set -e, set -u, set -o pipefail, trap
+- [✔️] Schedule scripts with crontab
 
 - Need to revisit this Shell Scriting 
 
@@ -141,8 +141,8 @@ Ans:
 
 - Branching Strategy:
 
-- main (production)
-- develop (integration)
+- main 
+- develop
 - Feature branches
 - Release branches 
 - Hotfix branches 
@@ -154,12 +154,6 @@ Ans:
 - Create release branch for testing
 - Merge release to main and develop
 - Hotfixes go to main and back to develop
-
-Best for: Long release cycles, teams with strict release processes.
-
-Pros: Clear separation of concerns, good for planning releases.
-
-Cons: Complex, can slow down development.
 
 - GitHub Flow 
 
@@ -173,15 +167,6 @@ Cons: Complex, can slow down development.
 - Work on feature
 - Open pull request
 - Merge to main after review
-
-- Deploy immediately
-
-- Best for: Continuous delivery, small teams.
-
-- Pros: Simple, fast, aligned with CI/CD.
-
-- Cons: Less control over release timing.
-
 
 
 - Trunk-Based Development (TBD)
@@ -198,18 +183,13 @@ Cons: Complex, can slow down development.
 - Merge small changes frequently
 - Deploy multiple times per day
  
-- Best for: High-velocity teams, DevOps, microservices.
-
-- Pros: Fast feedback, minimal merge conflicts.
-
-- Cons: Requires strong testing and CI/CD.
-
 ---
-
 ### Task 2: Revisit Your Weak Spots
 1. Pick **3 topics** from the checklist where you marked "Need to revisit"
 2. Go back to that day's challenge and redo the hands-on tasks
 3. Document what you re-learned in `day-28-notes.md`
+
+- I re-learned the shell scripting, GitHub CLI, LVM volume 
 
 ---
 
@@ -217,15 +197,104 @@ Cons: Complex, can slow down development.
 Answer these from memory (no Googling). Then verify your answers:
 
 1. What does `chmod 755 script.sh` do?
+
+Ans: The chmod 755 is a command use to give permission to the file.
+- In this case the owner has read,write,execute, group has read and execute, other also has read and execute permissions.
+
 2. What is the difference between a process and a service?
+
+Ans: A process is any application that is currently running, whether it is one that interacts directly with the user, such chrome, or one that is runnig quietly in the background. 
+
+- A service, on the other hand is a special kind of process that tends to run quietly in the background, often launching at boot time and being managed by the operating system.
+
+- While services are processes, not all processes are services.
+
+- Services tend to have no user interface and instead tend to perform functions such as managing networkd connections, databases and print queues and will often start up again if they crash.
+
+- In unix and similar operating systems,services tend to be called "daemons" and are managed by "init".
+
 3. How do you find which process is using port 8080?
+
+Ans: Using command sudo netstat -tulpn | grep 8080, we can find out which process is using port 8080.
+
 4. What does `set -euo pipefail` do in a shell script?
+
+Ans: The set -euo pipefaill line in a shell script enables three important saftey options:
+
+- -e: Exit immediately if any command exits with a non-zero status
+- -u: Treat unset variables an error and exit immediately if one is used
+
+- -o pipefail: if any commnad in pipeline fails the entire pipeline returns a non-zero exit code(instead of just the last command).
+
+
 5. What is the difference between `git reset --hard` and `git revert`?
+
+Ans:
+- git reset --hard: Rewrites history by moving the barnch pointer to a previous commit and discarding all changes.
+
+- It is desctructive and should never be used on shared branches.
+
+- git revert: Creates a new commit that undoes the changes of the previous commit.
+
+- It is safe for shared branches because it does not alter history it just adds a new "undo" commit.
+
 6. What branching strategy would you recommend for a team of 5 developers shipping weekly?
+
+Ans: The branching strategy i would recommend for a team of 5 developers shipping weekly:
+
+- Trunk-Based Development (With short-lived branches)
+
+- This is usually the best fit for small teams shipping frequently.
+
+- How it works
+
+- One main branch 
+
+-  Developers create short-lived feature branches(1-2 days max)
+
+- Merge back into main quickly via PRs
+
+- Use feature flags for incomplete work if needed
+
+- CI/CD runs on every merge alway releasable.
+
 7. What does `git stash` do and when would you use it?
+
+Ans: 
+- git stash lets you temporarily save your uncommitted changes so you can switch branches or work on something else without committing unfinished work.
+
 8. How do you schedule a script to run every day at 3 AM?
+
+Ans: Using follow command and script:
+- crontab -e
+
+- Script: 0 3 * * * /path/to/your/script.sh
+
 9. What is the difference between `git fetch` and `git pull`?
+
+Ans: The difference between git fetch and git pull:
+
+- git fetch: Downloads new commits, branches and tags from the remote repository.
+
+- But does not merge or modify your local working copy. it is safe and lets you review changes before integrating them.
+
+- git pull: it fetches and immediately integrates changes into you current branch.
+
+- note: Think of fetch as "Chech what is new" and pullas "get what is new and apply it"
+
+
 10. What is LVM and why would you use it instead of regular partitions?
+
+Ans: LVM (Logical Volume Manager) lets you create flexibel resizable storge volumes from multiple disks. unlike regular partitions.
+
+- Resize volumes online
+- combine disks into one storage pool.
+- create snapshots for backups or testing 
+- Add/remove disks easily.
+
+- Use it when you need flexibility and scalability
+- especially on servers or multi-disk setups. 
+- Avoid it for simple, static system where basic partitions suffice.
 
 ---
 
@@ -246,6 +315,16 @@ Examples:
 - Explain what a crontab is and why sysadmins use it
 
 Teaching is the best test of understanding.
+
+- Explain Git branching to non-developer
+
+Ans: Imagine you are writing a book and want to try a new ending without ruining the original. That is what Git branching does
+
+- A branch is like a separate copy of your work where can make changes safely.The main version called "Main"stays untouched while you experiment.
+
+- If your changes turn out good, you can merge them back into the main version. if not, you can simply discard the branch.
+
+- This lets multiple people work on different idea at the same time without interfering with each other.
 
 ---
 
