@@ -4,11 +4,11 @@
 
 ![Docker pull ubuntu](./images/Docker-pull-ubuntu.png)
 
-![Docker pull alpine](./images/Docker-pull-alpine.png)
+![Docker pull alpine](./images/Docker-pull-apline.png)
 
 ![Docker images list](./images/Docker-images.png)
 
-- 1 Compare ubuntu vs alpine- Why is one much smaller
+ 1. Compare ubuntu vs alpine- Why is one much smaller
 
 Ans:
 
@@ -20,11 +20,11 @@ Ans:
 
 ![Docker remove image](./images/Docker-images.png)
 
-### Task: Image Layers
+### Task 2: Image Layers
 
 ![Docker image history](./images/Docker-image-history.png)
 
-- 2 What do you see?
+ 2. What do you see?
 
 Ans: 
 - The base layer is debian:trixie (87.4MB)
@@ -32,4 +32,31 @@ Ans:
 - Final layers set env vars, expose port 80, and set entrypoint
 - Most layers are small (KB), except the base OS layer
 - This helps you optimize images — e.g., combine RUN commands or remove unnecessary files to reduce size.
+
+ 3. Write in your notes: What are layers and why does Docker use them?
+
+Ans:
+- Docker uses layers to break down images into reusable, read-only components. 
+
+- This allows efficient storage and faster builds by reusing unchanged layers across multiple images, minimizing disk usage and speeding up deployment.
+
+### Task 3: Container Lifecycle
+
+![Docker create](./images/Docker-create.png)
+
+![Docker start](./images/Docker-start.png)
+
+![Docker pause](./images/Docker-pause.png)
+
+![Docker unpause](./images/Docker-unpause.png)
+
+![Docker stop](./images/Docker-stop.png)
+
+![Docker restart](./images/Docker-restart)
+
+![Docker kill](./images/Docker-kill.png)
+
+![Docker remove](./images/Docker-remove.png)
+
+
 
