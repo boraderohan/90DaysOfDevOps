@@ -70,4 +70,14 @@ Ans:
 
 ![Docker inspect](./images/Docker-Ip-ports-mounts.png)
 
+### Task 5: Clean up
+
+![Docker stop command](./images/Docker-stop-command.png)
+
+![Docker listed deleted](./images/Docker-listed-exited.png)
+
+![Docker purne image](./images/Docker-prune-image.png)
+
+![Docker disk space](./images/Docker-disk-space.png)
+
 
