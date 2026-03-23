@@ -52,11 +52,13 @@ Ans:
 
 ![Docker stop](./images/Docker-stop.png)
 
-![Docker restart](./images/Docker-restart)
+![Docker restart](./images/Docker-restart.png)
 
 ![Docker kill](./images/Docker-kill.png)
 
-![Docker remove](./images/Docker-remove.png)
+![Docker remove](./images/Docker-Docker-rm.png)
+
+
 
 
 
