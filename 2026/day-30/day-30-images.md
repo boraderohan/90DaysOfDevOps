@@ -1,12 +1,12 @@
 ### Task 1: Docker Images
 
-![Docker pull nginx](./D/Docker_Assignment_Image/Docker-pull-nginx.png)
+![Docker pull nginx](./images/Docker-pull-nginx.png)
 
-![Docker pull ubuntu](./D/Docker_Assignment_Image/Docker-pull-ubuntu.png)
+![Docker pull ubuntu](./images/Docker-pull-ubuntu.png)
 
-![Docker pull alpine](./D/Docker_Assignment_Image/Docker-pull-alpine.png)
+![Docker pull alpine](./images/Docker-pull-alpine.png)
 
-![Docker images list](./D/Docker_Assignment_Image/Docker-images.png)
+![Docker images list](./images/Docker-images.png)
 
 - 1 Compare ubuntu vs alpine- Why is one much smaller
 
@@ -16,13 +16,13 @@ Ans:
 
 - Ubuntu ships with full GNU tools, glibc and extras for general use.
 
-![Docker inspect](./D/Docker_Assignment_Image/Docker-inspect.png)
+![Docker inspect](./images/Docker-inspect.png)
 
-![Docker remove image](./D/Docker_Assignment_Image/Docker-images.png)
+![Docker remove image](./images/Docker-images.png)
 
 ### Task: Image Layers
 
-![Docker image history](./D/Docker_Assignment_Image/Docker-image-history.png)
+![Docker image history](./images/Docker-image-history.png)
 
 - 2 What do you see?
 
