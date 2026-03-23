@@ -64,7 +64,7 @@ Ans:
 
 ![Docker Logs](./images/Docker-logs.png)
 
-![Docker real-time logs](./images/Docke-real-time-logs.png)
+![Docker real-time logs](./images/Docker-real-time-logs.png)
 
 ![Docker single command](./images/Docker-exec-single-command.png)
 
