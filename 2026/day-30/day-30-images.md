@@ -58,7 +58,16 @@ Ans:
 
 ![Docker remove](./images/Docker-Docker-rm.png)
 
+### Task 4: Working with Running Containers
 
+![Docker Detached](./images/Docker-Docker-detached.png)
 
+![Docker Logs](./images/Docker-Docker-logs.png)
+
+![Docker real-time logs](./images/Docker-real-time-logs.png)
+
+![Docker single command](./images/Docker-Docker-exec-single-command.png)
+
+![Docker inspect](./images/Docker-Docker-Ip-ports-mounts.png)
 
 
