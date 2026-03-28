@@ -30,7 +30,7 @@ Yesterday you manually created networks and volumes and ran containers one by on
 4. Access it in your browser
 5. Stop it with `docker compose down`
 
-![Task-2-compose](./image/Task-02.png)
+![Task-2-compose](./image/Task-02 .png)
 ![Task-2-Browser](./image/Task-02-browser.png)
 
 
@@ -69,7 +69,7 @@ Practice and document these:
 ![Task-4-down-rebuild](./image/Docker_down&rebuild.png)
 ![Task-4-browser](./image/Two-container-browser.png)
 ![Task-4-Removing](./image/Docker_stop_with_removing.png)
-![Task-4-logs](./image/Docker_Containers_logs.png)
+![Task-4-logs](./image/Docker_Containers _logs.png)
 
 ---
 
