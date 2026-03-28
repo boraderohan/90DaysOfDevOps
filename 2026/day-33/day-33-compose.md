@@ -69,7 +69,7 @@ Practice and document these:
 ![Task-4-down-rebuild](./image/Docker_down&rebuild.png)
 ![Task-4-browser](./image/Two-container-browser.png)
 ![Task-4-Removing](./image/Docker_stop_with_removing.png)
-![Task-4-logs](./image/Docker_Containers_logs.png)<F12>
+![Task-4-logs](./image/Docker_Containers_logs.png)
 
 ---
 
