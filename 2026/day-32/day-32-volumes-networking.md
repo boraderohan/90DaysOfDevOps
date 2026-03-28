@@ -50,7 +50,7 @@ Ans: Yes the data is intact
 
 ![Task-data-volume](./image/mysql_data_volume.png)
 ![Task-attach-volume](./image/Added-data-mysql-attach-volume.png)
-![Task-new-container](./image/docker_run_detach_volume-attached)
+![Task-new-container](./image/docker_run_detach_volume-attached.png)
 ![Task-list-volume](./image/docker_volume_listed.png)
 ---
 
