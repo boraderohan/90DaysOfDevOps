@@ -33,6 +33,8 @@ Ans:
 - The data was stored in the container's writable layer, not persisted anywhere.
 - To keep data between container restarts, we need volumes.
 
+![Task-stop-remove](./image/Task_2_docker_stop_remove.png)
+![]
 ---
 
 ### Task 2: Named Volumes
@@ -42,12 +44,14 @@ Ans:
 4. Run a brand new container with the **same volume**
 5. Is the data still there?
 
+Ans: Yes the data is intact
+
 **Verify:** `docker volume ls`, `docker volume inspect`
 
 ![Task-data-volume](./image/mysql_data_volume.png)
-![Task-stop](./image/Task_2_docker_stop_remove.png)
-
-
+![Task-attach-volume](./image/Added-data-mysql-attach-volume.png)
+![Task-new-container](./image/docker_run_detach_volume-attached)
+![Task-list-volume](./image/docker_volume_listed.png)
 ---
 
 ### Task 3: Bind Mounts
@@ -58,6 +62,23 @@ Ans:
 
 Write in your notes: What is the difference between a named volume and a bind mount?
 
+Ans: Named volume: A named volume is storage mangaed by Docker itself.
+
+- It store it in its own internal location
+- Easier to backup, move, and reuse across containers
+- Best for Databases, Production data, Persistent app storage
+
+- Bind Mount: A bind mount directly maps a folder file from your host machine into the container.
+
+- It uses exact host path
+- Chanes on host appear instantly inside container.
+- Less portable because path must exist on every machine.-
+- Best for Development, Editing source code live, Sharing config files.
+
+![Task-bind](./image/Docker-Bind.png)
+![Browser-image1](./image/Docker_Hello_from_Host.png)
+![Browser-image2](./image/Docker_updated_page.png)
+
 ---
 
 ### Task 4: Docker Networking Basics
@@ -66,6 +87,8 @@ Write in your notes: What is the difference between a named volume and a bind mo
 3. Run two containers on the default bridge — can they ping each other by **name**?
 4. Run two containers on the default bridge — can they ping each other by **IP**?
 
+![Task-4](./image/Docker_Task_4.png)
+![Task-4-list](./image/Listing_all_Docker_network.png)
 ---
 
 ### Task 5: Custom Networks
@@ -74,6 +97,23 @@ Write in your notes: What is the difference between a named volume and a bind mo
 3. Can they ping each other by **name** now?
 4. Write in your notes: Why does custom networking allow name-based communication but the default bridge doesn't?
 
+- 4. Why does custom networking allow name-based communication but the default bridge doesn't?
+
+Ans: Default bridge network
+- Uses basic Layer 2 bridge connectivity only
+- containers get IP addresses
+- No automatic DNS server for container names
+- Containers must communicate using IP addresses unless links/manul hosts are used
+
+- Custom bridge network
+- Docker create an embeded DNS service
+- Every container name becomes resolvable automatically
+- Containers can discover each other by name
+- Better isolation and service grouping
+
+![Task-5-custom](./image/Docker_Databas_Custom_app.png)
+![Task-5-Default-brideg](./image.Docker_default bridge.png)
+
 ---
 
 ### Task 6: Put It Together
@@ -81,6 +121,8 @@ Write in your notes: What is the difference between a named volume and a bind mo
 2. Run a **database container** (MySQL/Postgres) on that network with a volume for data
 3. Run an **app container** (use any image) on the same network
 4. Verify the app container can reach the database by container name
+
+![Task-6](./image/Docker_tast_6.png)
 
 ---
 
