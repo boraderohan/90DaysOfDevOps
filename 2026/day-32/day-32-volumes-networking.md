@@ -44,8 +44,8 @@ Ans:
 
 **Verify:** `docker volume ls`, `docker volume inspect`
 
-![Task-data-volume](/image/mysql_data_volume.png)
-![Task-stop](/image/Task_2_docker_stop_remove.png)
+![Task-data-volume](./image/mysql_data_volume.png)
+![Task-stop](./image/Task_2_docker_stop_remove.png)
 
 
 ---
