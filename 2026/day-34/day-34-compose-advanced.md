@@ -68,8 +68,9 @@ Ans:
 2. Make a code change in your app
 3. Rebuild and restart with one command
 
-![docker-rebuild](./image/Docker-compose-rebuild-one-commad.png)
+![docker-rebuild](./image/Docker-compose-build-one-command.png)
 ![docker-rebuild-1](./image/Docker-compose-rebuild-part2.png)
+![docker-updated-webpage](./image/Docker-rebuild-using-compose-file.png)
 
 ---
 
@@ -93,7 +94,7 @@ Ans:
 
 Ans:
 - Because host machine has only one port 5000.
-_ Docker cannot attach multiple container to same host directly.
+_ Docker cannot attach multiple container to same host directly
 
 ---
 key Learning 
