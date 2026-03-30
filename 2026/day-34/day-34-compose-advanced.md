@@ -34,7 +34,7 @@ Write a simple Dockerfile for the web app. The app doesn't need to be complex â€
 
 **Test:** Bring everything down and up â€” does the app wait for the DB?
 
-![mysql-ping-test](/.image/mysql-ping-test.png)
+![mysql-ping-test](/.image/mysql-test-ping.png)
 ![mysql-auto-ping-test](./image/mysql-auto-ping.png)
 
 ---
