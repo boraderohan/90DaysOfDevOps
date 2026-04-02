@@ -240,7 +240,7 @@ terraform destroy
 ```
 6. Verify in the AWS console -- both the S3 bucket and EC2 instance should be gone
 
-![Nothing-running](./image/Terraform-manages-nothing.png)
+![Nothing-running](./image/Terrform-manages-nothing.png)
 
 ---
 
@@ -264,8 +264,8 @@ Ans: Instead of clicking in the Aws console, write a file that tells Terraform w
 - Screenshot of `terraform apply` creating your S3 bucket and EC2 instance
 
 ![apply-s3](./image/Terraform-apply-S3-bucket.png)
-![apply-ec2](./image/Terraform-apply-EC2-instance.png)
-![apply-ec2-completed](./image/Terraform-apply-completed.png)
+![apply-ec2](./image/Terrform-apply-EC2-instance.png)
+![apply-ec2-completed](./image/Terraform-EC2-instance-completed.png)
 
 - Screenshot of the resources in the AWS console
 - What each Terraform command does (init, plan, apply, destroy, show, state list)
