@@ -63,7 +63,7 @@ Ans: A multi-stage Docker image is smaller because it separates the build enviro
 3. Explore the **tags** tab — understand how versioning works
 4. Pull a specific tag vs `latest` — what happens?
 
-![Task-4-pull](./image/Docker-pull.png)
+![Task-4-pull](./image/Docker-pulled.png)
 
 ---
 
