@@ -1,0 +1,42 @@
+# Stage 1: Build
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+# Stage 2: Runtime
+
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy only built files(or all if no build step )
+
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/app.js ./app.js
+
+# Create non root user
+# Install shadow package (contains addgroup/adduser)
+RUN apk add --no-cache shadow
+
+# Create non-root user
+RUN addgroup -g 1001 -S nodejs && \
+    adduser -u 1001 -S -G nodejs -s /bin/sh -D Tester && \
+    chown -R Tester:nodejs /app
+    
+# Switch to non root user
+USER Tester
+
+EXPOSE 3000
+
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:3000/api/health || exit 1
+
+# Start app 
+CMD ["npm", "start"]
