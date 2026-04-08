@@ -38,20 +38,13 @@
 
 ### Dockerfile 
 
-- Instruction               Purpose 
 
-- FROM <image>              Base image
-
-- WORKDIR                   set path
-
-- COPY                      Copy file (use this not add)
-
-- RUN                       Run build-time commands
-
-- EXPOSE                    Document port(doesnot publish)
-
-- CMD ["cmd", "arg"]        Default runtime command
-
-- ENTRYPOINT["cmd"]         Executable + args (often with CMD)
-
-- 
+| Instruction         | Purpose |
+|---------------------|---------|
+| `FROM <image>`       | Sets the base image (e.g., `node:18-alpine`) |
+| `WORKDIR`          | Sets the working directory inside the container |
+| `COPY`             | Copies files from host → container *(prefer over `ADD`)* |
+| `RUN`              | Executes commands during build (e.g., `npm install`) |
+| `EXPOSE`           | Documents which port the app listens on *(doesn’t publish it)* |
+| `CMD ["cmd", "arg"]` | Sets the default runtime command |
+| `ENTRYPOINT ["cmd"]` | Sets the executable + args *(often used with `CMD`)* |
