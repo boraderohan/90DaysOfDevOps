@@ -125,7 +125,7 @@ Pick **2 topics** you marked as shaky and redo the hands-on tasks from that day.
 - Revisited topics images layers and caching works
 - CMD VS ENTRYPOINT
 - Wrire a docker compose.yml for a multi-container app
-- write a multi-stae Dockerfile.
+- write a multi-state Dockerfile.
 - create custom networks and connect containers
 
 
