@@ -1,0 +1,27 @@
+server:
+
+  name: production-server
+  ip: 192.168.1.100
+  port: 8090
+
+database:
+
+  hostname: rohan
+  name: myapp_db
+  credentials:
+    user: admin
+    password: secure_password_123
+
+startup_script: | 
+  #!/bin/bash
+  echo "Starting server...."
+  docker run -d myapp:latest
+  echo "Server started!"
+
+startup_script: >
+  #!/bin/bash
+  echo "starting server..."
+  docker run -d myapp:latest
+  echo "Server started!"
+
+

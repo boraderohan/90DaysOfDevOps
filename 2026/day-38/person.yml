@@ -1,0 +1,14 @@
+person:
+  name: rohan
+  role: devops engineer
+  experience_year: 0
+  learning: yes
+  tools:
+    - linux
+    - shell scripting
+    - docker
+    - git
+    - github
+    
+  hobbies: [Anime, Reading, Listing-rap-music]
+
