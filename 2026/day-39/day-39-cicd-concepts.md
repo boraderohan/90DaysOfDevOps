@@ -117,9 +117,11 @@ Include at least 3 stages. Hand-drawn and photographed is perfectly fine.
 Ans: workflow_dispatch- This workflow is manually triggered.
 - The push trigger is commented out, so it only runs when someone manually clicks the "Run workflow" button in the GitHub Actions UI.
    - How many jobs does it have?
+
 Ans: Job- There is a single job called deploy that runs on ubuntu-latest.
 
    - What does it do? (best guess)
+
 Ans: This workflow automatically deploys a static portfolio website to GitHub Pages.
 - Checkout Code- Clones the repository code using the actions/checkout@v4 action
 - Setup GitHub Pages- Configures GitHub Pages setting using actions/configure-pages@v4
