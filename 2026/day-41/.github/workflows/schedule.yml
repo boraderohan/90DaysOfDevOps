@@ -1,0 +1,19 @@
+name: Scheduled Check
+
+on:
+    schedule:
+        - cron: '0 0 * * *' # Every day at midnight UTC
+
+jobs:
+    daily-checks:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: action/checkout@v4
+            
+            - name: Daily task
+              run: |
+                echo "Schedule workflow running"
+                echo "Current time: $(date -u)"
+                echo "This runs daily at midnight UTC"
+                
